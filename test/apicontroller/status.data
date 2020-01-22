@@ -1,0 +1,64 @@
+HEADER
+time=1420699202
+licpoll-version=6.2.1.5
+license-type=Flex
+server-ip=172.16.165.81
+client-name=CILGEOLICSR1
+poller-lmstat=C:\Program Files (x86)\Schlumberger\Schlumberger Licensing\flex118\lmutil.exe
+polling-interval=300
+polling-offset=0
+collector=licpoll
+product=cilgeolicsr1;kappa
+END_HEADER
+
+SERVERS
+server-list=27000@CILGEOLICSR1,27001@CILGEOLICSR1,27002@CILGEOLICSR1,27003@CILGEOLICSR1,27004@CILGEOLICSR1,27005@CILGEOLICSR1
+license-file=CILGEOLICSR1: C:\FlexNet\Server\IHS licences\Questor.lic
+server=CILGEOLICSR1;UP;11.8;MASTER
+server=CILGEOLICSR1;UP;11.7;MASTER
+daemon=KAPPA: UP v11.9
+daemon=ODM: UP v11.6
+daemon=callmd: UP v11.5
+daemon=scplmd: UP v11.3
+daemon=slbsls: UP v11.8
+daemon=QUESTOR: UP v11.7
+END_SERVERS
+
+FEATURE
+type=feature
+name=AMETHYSTE
+version=20141231
+daemon=KAPPA
+vendor=KAPPA
+expires=1435689000
+licenses=3
+used=0
+queued=0
+END_FEATURE
+
+FEATURE
+type=feature
+name=AMETHYSTE5
+version=20141231
+daemon=KAPPA
+vendor=KAPPA
+expires=1435689000
+licenses=3
+used=2
+queued=0
+entry=siankaj:CILGGNWS00356:CILGGNWS00356:1:0:420:1420626420
+entry=sushyam:CILGGNWS00239:CILGGNWS00239:1:0:895:1420625640
+END_FEATURE
+
+FEATURE
+type=feature
+name=RUBY
+version=20141231
+daemon=KAPPA
+vendor=KAPPA
+expires=1435689000
+licenses=3
+used=1
+queued=0
+entry=ivan:CILGGNWS00356:CILGGNWS00356:1:0:420:1420626420
+END_FEATURE
